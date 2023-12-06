@@ -1,34 +1,15 @@
 #include<stdio.h>
-
- int main (){
-    int day; // 1-mon ;
-    printf("enter day(1-7) :");
-    scanf("%d",&day);
-     switch (day)
+int main(){
+     int marks;
+     printf("enter marks:(0-100)");
+     scanf("%d",&marks);
+     if(marks <= 30){
+        printf("fail");
+     }else
      {
-     case 1: printf("monday \n");
-        /* code */
-        break;
-        case 2: printf("tuesday \n");
-        /* code */
-        break;
-        case 3: printf("wednesday \n");
-        /* code */
-        break;
-        case 4: printf("thursday \n");        /* code */
-        break;
-        case 5: printf("friday \n"); /* code */
-        /* code */
-        break;
-        case 6: printf("saturday \n"); /* code */
-        /* code */
-        break;
-        
-        case 7: printf("sunday \n"); /* code */
-        /* code */
-        break;
-     default:("not valid date");
-        
+        printf("pass");
      }
+     
+
     return 0;
- }
+}
